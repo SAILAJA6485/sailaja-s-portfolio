@@ -6,7 +6,6 @@
     <title>Personal Portfolio</title>
     <link href="styles.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -33,7 +32,7 @@
             <p>I'm a 3rd-year B.Tech student at Gayatri Vidya Parishad College of Engineering (A) specializing in MERN stack development and competitive programming. Passionate about building user-focused web applications and solving complex problems.</p>
             <div class="contact-info">
                 <p>Email: <a href="mailto:pappalasailaja2022@gmail.com">pappalasailaja2022@gmail.com</a></p>
-                <p>Phone: <a href="tel:+917895562348">+91 9491379267</a></p>
+                <p>Phone: <a href="tel:+917895562348">9491379267</a></p>
             </div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/pappala-sailaja-573775291/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
@@ -60,8 +59,8 @@
         <div class="services-container">
             <div class="service-box">
                 <div class="service-info">
-                    <h4><b><i>SKILLS</i></b></h4>
                     <ul>
+                        <h4><b><i>SKILLS</i></b></h4>
                         <li><b>Programming Languages:</b> C, C++, JavaScript</li>
                         <li><b>Core Concepts:</b> Data Structures and Algorithms, Operating System</li>
                         <li><b>Web Development:</b> HTML, CSS, MERN Stack</li>
@@ -71,8 +70,8 @@
             </div>
             <div class="service-box">
                 <div class="service-info">
-                    <h4><b><i>Achievements</i></b></h4>
                     <ul>
+                        <h4><b><i>Achievements</i></b></h4>
                         <li>150+ LeetCode problems (50 Days Badge 2024)</li>
                         <li>Solved over 150+ problems in GeeksForGeeks</li>
                         <li>Qualified GATE 2025</li>
@@ -83,8 +82,8 @@
             </div>
             <div class="service-box">
                 <div class="service-info">
-                    <h4><b><i>Projects</i></b></h4>
                     <ul>
+                        <h4><b><i>Projects</i></b></h4>
                         <li>Emotion Recognisation (using MIT App Inverntor)</li>
                         <li>Community Books Exchange Website</li>
                     </ul>
@@ -92,23 +91,23 @@
             </div>
             <div class="service-box">
                 <div class="service-info">
-                    <h4><b><i>Certifications</i></b></h4>
                     <ul>
+                        <h4><b><i>Certifications</i></b></h4>
                         <li class="cert-item">
-                            <span>Python Programming</span>
-                            <a href="https://drive.google.com/file/d/your-python-cert-id/view" target="_blank" class="cert-btn">View</a>
+                            <span>AWS Cloud Virtual Internship</span>
+                            <a href="https://drive.google.com/file/d/1Ncv1e3q4NYcmix7j4gn8Y38c8o6ljJQ-/view?usp=drive_link" target="_blank" class="cert-btn">View</a>
                         </li>
                         <li class="cert-item">
-                            <span>C++ Programming</span>
-                            <a href="https://drive.google.com/file/d/your-cpp-cert-id/view" target="_blank" class="cert-btn">View</a>
+                            <span>Academic Certificate</span>
+                            <a href="https://drive.google.com/file/d/1CiwmUYJbyF53kArtEKxC6kFfFvhZ2ZJr/view?usp=drive_link" target="_blank" class="cert-btn">View</a>
                         </li>
                         <li class="cert-item">
-                            <span>AWS Data Engineering</span>
-                            <a href="https://drive.google.com/file/d/your-aws-cert-id/view" target="_blank" class="cert-btn">View</a>
+                            <span>GATE 2025 Score Card</span>
+                            <a href="https://drive.google.com/file/d/1MWB6zVlZeP-99kf2WjLe333YEDzXm9xr/view?usp=drive_link" target="_blank" class="cert-btn">View</a>
                         </li>
                         <li class="cert-item">
-                            <span>Google AI-ML</span>
-                            <a href="https://drive.google.com/file/d/your-google-cert-id/view" target="_blank" class="cert-btn">View</a>
+                            <span>C++ certificate</span>
+                            <a href="https://drive.google.com/file/d/1ZNTN-0gxG2jF_F9v6AbSyi_qZHWFs990/view?usp=drive_link" target="_blank" class="cert-btn">View</a>
                         </li>
                         <li class="cert-item">
                             <span>Full Stack Web Development</span>
@@ -121,18 +120,15 @@
     </section>
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <div class="contact-form-container">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="text" id="fullName" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
-            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="button" value="Send Message" class="btn" onclick="sendEmail()">
-        </div>
-        <div class="notification" id="notification">
-            <span id="notification-message"></span>
-            <button class="close-btn" onclick="this.parentElement.classList.remove('show')">&times;</button>
-        </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <div class="notification" id="notification">Message sent successfully!</div>
     </section>
     <script src="script.js"></script>
 </body>
