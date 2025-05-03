@@ -48,9 +48,11 @@ body {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+
 .logo span {
     color: var(--main-color);
 }
+
 .logo:hover {
     transform: scale(1.01);
 }
@@ -63,6 +65,7 @@ body {
     transition: 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
 }
+
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
@@ -90,6 +93,7 @@ section {
 .home-img {
     border-radius: 50%;
 }
+
 .home-img img {
     position: relative;
     top: 3rem;
@@ -99,6 +103,7 @@ section {
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
+
 .home-img img:hover {
     box-shadow: 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
@@ -119,11 +124,13 @@ section {
     margin-top: 1.5rem;
     line-height: 1;
 }
+
 .home-content h3 {
     margin-top: 2rem;
     font-size: 3rem;
     margin-bottom: 2rem;
 }
+
 .home-content p {
     font-size: 1.5rem;
     font-weight: 500;
@@ -134,15 +141,18 @@ section {
     margin: 2rem 0;
     text-align: center;
 }
+
 .contact-info p {
     font-size: 1.5rem;
     color: var(--text-color);
     margin: 0.5rem 0;
 }
+
 .contact-info a {
     color: var(--main-color);
     text-decoration: none;
 }
+
 .contact-info a:hover {
     color: white;
     text-decoration: underline;
@@ -168,6 +178,7 @@ section {
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease-in-out;
 }
+
 .social-icons a i {
     pointer-events: none;
     font-size: 2.4rem;
@@ -194,6 +205,7 @@ section {
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
+
 .btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
@@ -205,14 +217,17 @@ section {
     font-weight: 600;
     min-width: 280px;
 }
+
 .text-animation span {
     position: relative;
 }
+
 .text-animation span::before {
     content: 'Web Developer';
     color: var(--main-color);
     animation: words 20s infinite;
 }
+
 .text-animation span::after {
     content: "";
     position: absolute;
@@ -229,6 +244,7 @@ section {
         border-left: 2px solid var(--main-color);
     }
 }
+
 @keyframes words {
     0%, 20% { content: "Web Developer"; }
     21%, 40% { content: "Tech Enthusiast"; }
@@ -236,6 +252,7 @@ section {
     61%, 80% { content: "Code Explorer"; }
     81%, 100% { content: "Developer in Progress"; }
 }
+
 @keyframes typing {
     0%, 10%, 30%, 50%, 70%, 90% {
         width: 0;
@@ -262,6 +279,7 @@ section {
 .about-img {
     border-radius: 50%;
 }
+
 .about-img img {
     position: relative;
     width: 25vw;
@@ -272,6 +290,7 @@ section {
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
+
 .about-img img:hover {
     box-shadow: 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
@@ -286,6 +305,7 @@ section {
     text-align: left;
     line-height: 1.5;
 }
+
 .about-content h3 {
     font-size: 2.6rem;
     margin: 2rem 0 3rem;
@@ -482,6 +502,7 @@ section {
     html {
         font-size: 55%;
     }
+
     .services-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2, 1fr);
@@ -493,9 +514,11 @@ section {
     header {
         padding: 2rem 3%;
     }
+
     section {
         padding: 10rem 3% 2rem;
     }
+
     .services {
         padding-bottom: 7rem;
     }
@@ -505,67 +528,83 @@ section {
     #menu-icon {
         display: flex;
     }
+
     .navbar {
         position: absolute;
         top: 100%;
-        right: 50%;
-        width: 50%;
+        right: 0; /* Adjusted for proper alignment */
+        width: 70%; /* Increased width for better visibility */
         padding: 1rem 3%;
         background: black;
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
+        display: none; /* Ensure it’s hidden by default */
     }
+
     .navbar.active {
         display: block;
     }
+
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
     }
+
     .home {
         flex-direction: column;
         margin: 5rem 4rem;
     }
+
     .home-content h3 {
         font-size: 2.6rem;
         margin-top: 3rem;
     }
+
     .home-content h1 {
         font-size: 8rem;
         margin-top: 3rem;
     }
+
     .home-content p {
         max-width: 600px;
         margin: 0 auto;
     }
+
     .contact-info p {
         font-size: 1.4rem;
     }
+
     .home-img img {
         width: 56vw;
         margin-top: -2rem;
     }
+
     .about {
         flex-direction: column-reverse;
     }
+
     .about-content {
         margin: 0 2rem 4rem;
     }
+
     .about-img img {
         width: 52vw;
         margin-top: 1rem;
         margin-bottom: 3rem;
     }
+
     .services h2 {
         margin-bottom: 3rem;
     }
+
     .services-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .contact-form-container .input-box input {
         width: 100%;
     }
