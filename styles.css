@@ -429,25 +429,8 @@ section {
     margin: 2rem;
 }
 
-.notification {
-    display: none;
-    text-align: center;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border: 2px solid var(--main-color);
-    border-radius: 0.8rem;
-    padding: 1rem;
-    margin: 1rem auto;
-    max-width: 70rem;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
 
-.notification.show {
-    display: block;
-    opacity: 1;
-}
+
 
 @media (max-width: 1285px) {
     html {
@@ -565,4 +548,32 @@ section {
     .contact-form-container .input-box input {
         width: 100%;
     }
+}
+.notification {
+    display: none;
+    margin-top: 10px; /* Space below the button */
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Match button width or form width */
+    max-width: 300px; /* Limit width for aesthetics */
+    opacity: 1 !important; /* Ensure visibility */
+    visibility: visible !important; /* Prevent hiding */
+    background-color: #f0f0f0; /* Fallback background */
+}
+
+.notification.success {
+    color: #ffffff !important;
+    background-color: #28a745 !important; /* Green for success */
+}
+
+.notification.error {
+    color: #ffffff !important;
+    background-color: #dc3545 !important; /* Red for failure */
+}
+
+.notification.processing {
+    color: #ffffff !important;
+    background-color: #007bff !important; /* Blue for processing */
 }
