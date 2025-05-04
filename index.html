@@ -6,6 +6,7 @@
     <title>Personal Portfolio</title>
     <link href="styles.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -32,7 +33,7 @@
             <p>I'm a 3rd-year B.Tech student at Gayatri Vidya Parishad College of Engineering (A) specializing in MERN stack development and competitive programming. Passionate about building user-focused web applications and solving complex problems.</p>
             <div class="contact-info">
                 <p>Email: <a href="mailto:pappalasailaja2022@gmail.com">pappalasailaja2022@gmail.com</a></p>
-                <p>Phone: <a href="tel:+917895562348">+91 9491379267</a></p>
+                <p>Phone: <a href="tel:+919491379267">+91 9491379267</a></p>
             </div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/pappala-sailaja-573775291/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
@@ -84,7 +85,7 @@
                 <div class="service-info">
                     <ul>
                         <h4><b><i>Projects</i></b></h4>
-                        <li>Emotion Recognisation (using MIT App Inverntor)</li>
+                        <li>Emotion Recognition (using MIT App Inventor)</li>
                         <li>Community Books Exchange Website</li>
                     </ul>
                 </div>
@@ -106,12 +107,12 @@
                             <a href="https://drive.google.com/file/d/1MWB6zVlZeP-99kf2WjLe333YEDzXm9xr/view?usp=drive_link" target="_blank" class="cert-btn">View</a>
                         </li>
                         <li class="cert-item">
-                            <span>C++ certificate</span>
+                            <span>C++</span>
                             <a href="https://drive.google.com/file/d/1ZNTN-0gxG2jF_F9v6AbSyi_qZHWFs990/view?usp=drive_link" target="_blank" class="cert-btn">View</a>
                         </li>
                         <li class="cert-item">
                             <span>Full Stack Web Development</span>
-                            <a href="https://drive.google.com/file/d/your-fullstack-cert-id/view" target="_blank" class="cert-btn">View</a>
+                            <a href="#" target="_blank" class="cert-btn">View (Update with actual link)</a>
                         </li>
                     </ul>
                 </div>
@@ -125,10 +126,10 @@
                 <input type="text" name="fullName" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email" required>
             </div>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
+            <div class="notification" id="notification"></div>
         </form>
-        <div class="notification" id="notification">Message sent successfully!</div>
     </section>
     <script src="script.js"></script>
 </body>
